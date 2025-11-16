@@ -19,16 +19,16 @@
       overflow-x: hidden;
       overflow-y: auto; /* 允许下拉 */
     }
-    .bg-image {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-height: 100%;
-      max-width: 100%;
-      opacity: 0.6;
-      z-index: 0;
-    }
+.bg-image {
+  position: absolute;
+  top: 0;               /* 顶部对齐 */
+  left: 50%;            /* 水平居中 */
+  transform: translateX(-30%); /* 只在水平方向居中 */
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 0.6;
+  z-index: 0;
+}
     .content-wrapper {
       position: relative;
       z-index: 1;
