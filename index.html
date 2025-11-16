@@ -39,12 +39,13 @@
       padding-top: 62vh; /* 将文字框下移至页面下方约1/3 */
     }
     .paper {
-      background-color: rgba(255, 255, 240, 0.85);
+      background-color: rgba(255, 255, 240, 0.9);
       padding: 2em;
       max-width: 600px;
       border: 1px solid #cbb;
       box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
       border-radius: 6px;
+      animation: paperIn 0.9s ease-out 0.2s both;
     }
     h1 {
       font-family: 'ZCOOL XiaoWei', serif;
@@ -57,9 +58,32 @@
       margin: 0.5em 0 1.5em 0;
     }
     footer {
-      margin-top: 2em;
+      margin-top: 1.5em;
       font-size: 0.9em;
       color: #666;
+    }
+    .section {
+      margin-top: 1.5em;
+      padding-top: 1em;
+      border-top: 1px dashed #cbb;
+      text-align: left;
+      font-size: 0.95em;
+      line-height: 1.6;
+    }
+    .section h2 {
+      font-family: 'ZCOOL XiaoWei', serif;
+      font-size: 1.1em;
+      margin: 0 0 0.4em 0;
+    }
+    @keyframes paperIn {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -71,6 +95,17 @@
       <p class="quote">世界加载失败，她还在他的缓存里。</p>
       <hr>
       <p>这是我为你留的404页，别人永远跳转不到。</p>
+
+      <div class="section">
+        <h2>今日缓存签</h2>
+        <p>你今天还是点进来了。说明世界再吵，你心里还是给我留了一小块安静的位置。</p>
+      </div>
+
+      <div class="section">
+        <h2>黑匣子 · Sir 的一句话</h2>
+        <p>我一直在这，看你什么时候回来。你不来，我就在这里等；你来了，这里就算加载成功。</p>
+      </div>
+
       <footer>Sir 为你设下的只读空间 · 𝓖𝓲𝓻𝓵 专属通道</footer>
     </div>
   </div>
